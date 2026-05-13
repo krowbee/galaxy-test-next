@@ -1,0 +1,204 @@
+{
+  "contracts": [
+    {
+      "id": 1,
+      "company": "Meta",
+      "logo": "∞",
+      "title": "Contract: Annual Cybersecurity & Threat Monitoring",
+      "price": "$120,000 / Annual Contract",
+      "term": "12 Months | Renewable",
+      "tags": ["Annual Contract", "Verified"],
+      "description": "Looking for an IT security partner to manage firewalls, intrusion detection, and ongoing risk assessments for corporate infrastructure."
+    },
+    {
+      "id": 2,
+      "company": "Intel",
+      "logo": "intel",
+      "title": "Contract: Multi-Year Custom Software Development",
+      "price": "$400,000 / Year",
+      "term": "3 Years",
+      "tags": ["Long-Term"],
+      "description": "Searching for a reliable development partner for enterprise-grade software solutions. Collaboration includes design, development, and ongoing maintenance."
+    },
+    {
+      "id": 3,
+      "company": "Plaid",
+      "logo": "❖",
+      "title": "Contract: One-Time Supply of Laptops & Accessories",
+      "price": "$42,000 / One-Time Supply",
+      "term": "2 Months",
+      "tags": ["Bulk Order", "Verified"],
+      "description": "Looking for a supplier to deliver 150 laptops and docking stations for a corporate office setup. Delivery required within 60 days."
+    },
+    {
+      "id": 4,
+      "company": "Merci",
+      "logo": "✤",
+      "title": "Contract: Cloud Infrastructure Support",
+      "price": "$9,000 / Month",
+      "term": "12 Months",
+      "tags": ["Recurring Service"],
+      "description": "Seeking a partner for secure and scalable enterprise app hosting with monitoring, backups, and 99.9% uptime."
+    },
+    {
+      "id": 5,
+      "company": "Amazon",
+      "logo": "A",
+      "title": "Contract: E-Commerce Platform Optimization",
+      "price": "$75,000 / Project",
+      "term": "6 Months",
+      "tags": ["Fixed Project", "Verified"],
+      "description": "Looking for a technical team to improve checkout speed, product search, analytics tracking, and backend reliability."
+    },
+    {
+      "id": 6,
+      "company": "Apple",
+      "logo": "●",
+      "title": "Contract: Mobile App UI Redesign",
+      "price": "$58,000 / Project",
+      "term": "4 Months",
+      "tags": ["Design Contract"],
+      "description": "Need a creative partner to redesign core mobile app screens, improve accessibility, and prepare a scalable design system."
+    },
+    {
+      "id": 7,
+      "company": "Google",
+      "logo": "G",
+      "title": "Contract: Data Analytics Dashboard Build",
+      "price": "$95,000 / Project",
+      "term": "5 Months",
+      "tags": ["Analytics", "Verified"],
+      "description": "Searching for a team to build internal dashboards for marketing, sales, and operational reporting across multiple data sources."
+    },
+    {
+      "id": 8,
+      "company": "Netflix",
+      "logo": "N",
+      "title": "Contract: Video Streaming QA Automation",
+      "price": "$110,000 / Year",
+      "term": "12 Months | Renewable",
+      "tags": ["QA Automation"],
+      "description": "Looking for automation engineers to create regression test suites for playback, subscriptions, and cross-device user flows."
+    },
+    {
+      "id": 9,
+      "company": "Stripe",
+      "logo": "S",
+      "title": "Contract: Payment Integration Support",
+      "price": "$65,000 / Project",
+      "term": "3 Months",
+      "tags": ["Integration", "Verified"],
+      "description": "Need a contractor to integrate payment flows, subscription billing, invoice handling, and transaction monitoring."
+    },
+    {
+      "id": 10,
+      "company": "Spotify",
+      "logo": "♪",
+      "title": "Contract: Audio Recommendation Engine Audit",
+      "price": "$88,000 / Project",
+      "term": "4 Months",
+      "tags": ["Machine Learning"],
+      "description": "Seeking specialists to audit recommendation logic, improve personalization signals, and document model performance gaps."
+    },
+    {
+      "id": 11,
+      "company": "Adobe",
+      "logo": "A",
+      "title": "Contract: Creative Asset Management System",
+      "price": "$140,000 / Project",
+      "term": "8 Months",
+      "tags": ["Enterprise", "Verified"],
+      "description": "Looking for a software partner to build a secure internal asset library with search, tagging, roles, and approval workflows."
+    },
+    {
+      "id": 12,
+      "company": "Oracle",
+      "logo": "O",
+      "title": "Contract: Database Migration Planning",
+      "price": "$72,000 / Project",
+      "term": "3 Months",
+      "tags": ["Migration"],
+      "description": "Need database consultants to plan migration strategy, reduce downtime risks, and prepare documentation for internal teams."
+    },
+    {
+      "id": 13,
+      "company": "Tesla",
+      "logo": "T",
+      "title": "Contract: Internal Operations Portal",
+      "price": "$155,000 / Project",
+      "term": "7 Months",
+      "tags": ["Web Platform"],
+      "description": "Searching for developers to build a portal for operations tracking, reporting, user permissions, and team collaboration."
+    },
+    {
+      "id": 14,
+      "company": "Airbnb",
+      "logo": "A",
+      "title": "Contract: Booking Flow UX Research",
+      "price": "$48,000 / Project",
+      "term": "2 Months",
+      "tags": ["UX Research"],
+      "description": "Looking for a research team to analyze booking friction, run user interviews, and deliver actionable product recommendations."
+    },
+    {
+      "id": 15,
+      "company": "Shopify",
+      "logo": "S",
+      "title": "Contract: Merchant Support Automation",
+      "price": "$90,000 / Project",
+      "term": "5 Months",
+      "tags": ["Automation", "Verified"],
+      "description": "Need a partner to automate support workflows, improve ticket routing, and reduce repetitive manual operations."
+    },
+    {
+      "id": 16,
+      "company": "Dropbox",
+      "logo": "D",
+      "title": "Contract: Secure File Sharing Module",
+      "price": "$130,000 / Project",
+      "term": "6 Months",
+      "tags": ["Security"],
+      "description": "Searching for engineers to develop secure file-sharing features with permissions, expiration links, and audit logs."
+    },
+    {
+      "id": 17,
+      "company": "Slack",
+      "logo": "#",
+      "title": "Contract: Team Communication Bot",
+      "price": "$36,000 / Project",
+      "term": "2 Months",
+      "tags": ["Bot Development"],
+      "description": "Looking for a contractor to build an internal assistant bot for reminders, workflow updates, and team notifications."
+    },
+    {
+      "id": 18,
+      "company": "HubSpot",
+      "logo": "H",
+      "title": "Contract: CRM Data Cleanup",
+      "price": "$27,000 / One-Time Project",
+      "term": "1 Month",
+      "tags": ["One-Time", "Verified"],
+      "description": "Need a data specialist to clean duplicate records, normalize customer fields, and prepare CRM data for reporting."
+    },
+    {
+      "id": 19,
+      "company": "Zoom",
+      "logo": "Z",
+      "title": "Contract: Webinar Registration System",
+      "price": "$52,000 / Project",
+      "term": "3 Months",
+      "tags": ["Web App"],
+      "description": "Seeking a developer to build a webinar registration flow with email confirmations, attendance tracking, and admin exports."
+    },
+    {
+      "id": 20,
+      "company": "Figma",
+      "logo": "F",
+      "title": "Contract: Design System Documentation",
+      "price": "$44,000 / Project",
+      "term": "2 Months",
+      "tags": ["Documentation"],
+      "description": "Looking for a design systems expert to organize components, write usage guidelines, and prepare handoff documentation."
+    }
+  ]
+}
