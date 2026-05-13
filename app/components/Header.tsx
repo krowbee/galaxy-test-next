@@ -10,13 +10,13 @@ export function Header() {
       <header className="flex flex-roww-full bg-linear-to-r justify-between items-center from-white/35 to-white/30  px-6 py-4 z-20 rounded-full">
         <Logo />
         <nav className="hidden md:flex md:flex-row  font-montserrat gap-10">
-          <a href="#" className="text-blue-600 active">
+          <a href="#hero" className="text-blue-600 active">
             Home
           </a>
-          <a href="#" className="hover:text-white">
+          <a href="#how-it-works" className="hover:text-white">
             How It Works
           </a>
-          <a href="#" className="hover:text-white">
+          <a href="#contracts" className="hover:text-white">
             Latest Contracts Post
           </a>
         </nav>

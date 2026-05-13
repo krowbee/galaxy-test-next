@@ -12,7 +12,9 @@
     transform: translateX(calc(-100% / 3));
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .marquee {
   animation: animate-marquee 20s infinite linear;
 }

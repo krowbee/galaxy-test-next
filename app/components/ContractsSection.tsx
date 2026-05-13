@@ -10,7 +10,10 @@ export async function ContractsSection() {
     contracts = res.data;
   }
   return (
-    <section className="w-full flex flex-col gap-8 font-montserrat px-8 py-4">
+    <section
+      className="w-full flex flex-col gap-8 font-montserrat px-8 py-4"
+      id="contracts"
+    >
       <div className="w-full flex flex-col items-center justify-center">
         <h2 className="text-5xl font-bold text-center">
           Latest Contracts Post
