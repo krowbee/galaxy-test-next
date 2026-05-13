@@ -1,7 +1,14 @@
+import { PostContracts } from "@/requests/server/PostContracts";
 import { ContractsContainer } from "./contracts/ContractsContainer";
 import { FilterButtons } from "./contracts/FilterButtons";
+import { ContractType } from "./contracts/types/contractType";
 
-export function ContractsSection() {
+export async function ContractsSection() {
+  let contracts: ContractType[] = [];
+  const res = await PostContracts();
+  if (res.success) {
+    contracts = res.data;
+  }
   return (
     <section className="w-full flex flex-col gap-8 font-montserrat px-8 py-4">
       <div className="w-full flex flex-col items-center justify-center">
@@ -13,7 +20,13 @@ export function ContractsSection() {
         </p>
       </div>
       <FilterButtons />
-      <ContractsContainer />
+      {contracts.length > 0 ? (
+        <ContractsContainer contracts={contracts} />
+      ) : (
+        <div className="w-full h-full justify-center items-center text-red-500">
+          <p className="text-xl text-center">Something went wrong</p>
+        </div>
+      )}
     </section>
   );
 }

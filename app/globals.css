@@ -14,5 +14,5 @@
 }
 
 .marquee {
-  animation: animate-marquee s infinite linear;
+  animation: animate-marquee 20s infinite linear;
 }

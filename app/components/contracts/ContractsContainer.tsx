@@ -1,91 +1,13 @@
 "use client";
 import { ArrowRightIcon, ClockIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { ContractType } from "./types/contractType";
 
-const contracts = [
-  {
-    company: "Meta",
-    logo: "∞",
-    title: "Contract: Annual Cybersecurity & Threat Monitoring",
-    price: "$120,000 / Annual Contract",
-    term: "12 Months | Renewable",
-    tags: ["Annual Contract", "Verified"],
-    description:
-      "Looking for an IT security partner to manage firewalls, intrusion detection, and ongoing risk assessments for corporate infrastructure.",
-  },
-  {
-    company: "Intel",
-    logo: "intel",
-    title: "Contract: Multi-Year Custom Software Development",
-    price: "$400,000 / Year",
-    term: "3 Years",
-    tags: ["Long-Term"],
-    description:
-      "Searching for a reliable development partner for enterprise-grade software solutions. Collaboration includes design, development, and ongoing maintenance.",
-  },
-  {
-    company: "Plaid",
-    logo: "❖",
-    title: "Contract: One-Time Supply of Laptops & Accessories",
-    price: "$42,000 / One-Time Supply",
-    term: "2 Months",
-    tags: ["Bulk Order", "Verified"],
-    description:
-      "Looking for a supplier to deliver 150 laptops and docking stations for a corporate office setup. Delivery required within 60 days.",
-  },
-  {
-    company: "MERCI",
-    logo: "✤",
-    title: "Contract: Cloud Infrastructure Support",
-    price: "$9,000 / Month",
-    term: "12 Months",
-    tags: ["Recurring Service"],
-    description:
-      "Seeking a partner for secure and scalable enterprise app hosting with 99.9% uptime.",
-  },
-  {
-    company: "Meta",
-    logo: "∞",
-    title: "Contract: Annual Cybersecurity & Threat Monitoring",
-    price: "$120,000 / Annual Contract",
-    term: "12 Months | Renewable",
-    tags: ["Annual Contract", "Verified"],
-    description:
-      "Looking for an IT security partner to manage firewalls, intrusion detection, and ongoing risk assessments for corporate infrastructure.",
-  },
-  {
-    company: "Intel",
-    logo: "intel",
-    title: "Contract: Multi-Year Custom Software Development",
-    price: "$400,000 / Year",
-    term: "3 Years",
-    tags: ["Long-Term"],
-    description:
-      "Searching for a reliable development partner for enterprise-grade software solutions. Collaboration includes design, development, and ongoing maintenance.",
-  },
-  {
-    company: "Plaid",
-    logo: "❖",
-    title: "Contract: One-Time Supply of Laptops & Accessories",
-    price: "$42,000 / One-Time Supply",
-    term: "2 Months",
-    tags: ["Bulk Order", "Verified"],
-    description:
-      "Looking for a supplier to deliver 150 laptops and docking stations for a corporate office setup. Delivery required within 60 days.",
-  },
-  {
-    company: "MERCI",
-    logo: "✤",
-    title: "Contract: Cloud Infrastructure Support",
-    price: "$9,000 / Month",
-    term: "12 Months",
-    tags: ["Recurring Service"],
-    description:
-      "Seeking a partner for secure and scalable enterprise app hosting with 99.9% uptime.",
-  },
-];
-
-export function ContractsContainer() {
+export function ContractsContainer({
+  contracts,
+}: {
+  contracts: ContractType[];
+}) {
   const scrollRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = scrollRef.current;
@@ -103,9 +25,9 @@ export function ContractsContainer() {
   return (
     <div className="w-full overflow-x-auto scrollbar-none" ref={scrollRef}>
       <div className="flex flex-row gap-5 min-w-max px-1 py-2">
-        {contracts.map((contract, index) => (
+        {contracts.map((contract) => (
           <article
-            key={index}
+            key={contract.id}
             className="relative overflow-visible w-70 min-h-75 shrink-0 rounded-[22px] bg-[#f4f4f4] px-6 py-6"
           >
             <div className="mb-4 flex items-center gap-2">
