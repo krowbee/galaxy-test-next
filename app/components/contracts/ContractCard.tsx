@@ -5,7 +5,7 @@ export function ContractCard({ contract }: { contract: ContractType }) {
   return (
     <article
       key={contract.id}
-      className="relative overflow-visible w-100 min-h-110 shrink-0 rounded-[22px] bg-[#f4f4f4] px-6 py-6"
+      className="relative overflow-visible w-90 lg:w-100 min-h-110 shrink-0 rounded-[22px] bg-[#f4f4f4] px-6 py-6"
     >
       <div className="mb-4 flex items-center">
         <span className="text-2xl font-bold text-blue-600">

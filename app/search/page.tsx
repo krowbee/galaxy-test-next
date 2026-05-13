@@ -15,7 +15,7 @@ export default async function SearchContracts({ searchParams }: SearchParams) {
   }
 
   return (
-    <section className="w-full max-h-screen flex flex-col font-montserrat gap-4 px-10 py-8 ">
+    <section className="w-full flex flex-col font-montserrat gap-4 px-0 py-6 lg:px-10 lg:py-8 ">
       <h1 className="text-5xl font-bold text-center">Search Result</h1>
       <div className="w-full h-full flex flex-wrap shrink-0 gap-4 mx-auto justify-center overflow-auto scrollbar-none">
         {contracts.length > 0 ? (
