@@ -1,8 +1,8 @@
-import { baseUrl } from "../API_URL";
+import { getBaseUrl } from "../API_URL";
 
 export async function searchContracts(query: string) {
   try {
-    const res = await fetch(baseUrl + "/api/search", {
+    const res = await fetch(getBaseUrl() + "/api/search", {
       method: "POST",
       body: JSON.stringify({ query }),
     });

@@ -1,10 +1,10 @@
 import { ContractType } from "@/app/components/contracts/types/contractType";
 import { ApiResult } from "../ApiResult";
-import { baseUrl } from "../API_URL";
+import { getBaseUrl } from "../API_URL";
 
 export async function PostContracts(): Promise<ApiResult<ContractType[]>> {
   try {
-    const res = await fetch(baseUrl + "/api/contracts", {
+    const res = await fetch(getBaseUrl() + "/api/contracts", {
       method: "POST",
       cache: "no-store",
     });
