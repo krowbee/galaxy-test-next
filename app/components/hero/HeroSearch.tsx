@@ -22,9 +22,10 @@ export function HeroSearch() {
 
       <input
         type="text"
-        className="min-w-0 flex-1 bg-transparent text-white outline-none font-montserrat px-2"
+        className="min-w-0 flex-1 bg-transparent text-white outline-none font-montserrat px-2 placeholder:text-gray-200 text-lg"
         value={value ?? ""}
         onChange={(e) => setValue(e.currentTarget.value)}
+        placeholder="My Search Query"
       />
 
       <button

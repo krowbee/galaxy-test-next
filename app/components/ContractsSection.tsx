@@ -2,6 +2,7 @@ import { PostContracts } from "@/requests/server/PostContracts";
 import { ContractsContainer } from "./contracts/ContractsContainer";
 import { FilterButtons } from "./contracts/FilterButtons";
 import { ContractType } from "./contracts/types/contractType";
+import { InfoMessage } from "./InfoMessage";
 
 export async function ContractsSection() {
   let contracts: ContractType[] = [];
@@ -26,9 +27,7 @@ export async function ContractsSection() {
       {contracts.length > 0 ? (
         <ContractsContainer contracts={contracts} />
       ) : (
-        <div className="w-full h-full justify-center items-center text-red-500">
-          <p className="text-xl text-center">Something went wrong</p>
-        </div>
+        <InfoMessage text="Something went wrong" error={true} />
       )}
     </section>
   );

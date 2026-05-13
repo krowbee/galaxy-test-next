@@ -1,25 +1,29 @@
 "use client";
+import { useHomepage } from "../hooks/useHomepage";
 import { useMobile } from "../hooks/useMobile";
 import { BurgerMenu } from "./burger-menu/BurgerMenu";
 import { Logo } from "./logo";
 
 export function Header() {
   const isMobile = useMobile();
+  const isHomepage = useHomepage();
   return (
     <div className="absolute z-20 w-full px-3 pt-3 md:px-8 lg:px-12">
       <header className="flex flex-roww-full bg-linear-to-r justify-between items-center from-white/35 to-white/30  px-6 py-4 z-20 rounded-full">
         <Logo />
-        <nav className="hidden md:flex md:flex-row  font-montserrat gap-10">
-          <a href="#hero" className="text-blue-600 active">
-            Home
-          </a>
-          <a href="#how-it-works" className="hover:text-white">
-            How It Works
-          </a>
-          <a href="#contracts" className="hover:text-white">
-            Latest Contracts Post
-          </a>
-        </nav>
+        {isHomepage ? (
+          <nav className="hidden md:flex md:flex-row  font-montserrat gap-10">
+            <a href="#hero" className="text-blue-600 active">
+              Home
+            </a>
+            <a href="#how-it-works" className="hover:text-white">
+              How It Works
+            </a>
+            <a href="#contracts" className="hover:text-white">
+              Latest Contracts Post
+            </a>
+          </nav>
+        ) : null}
         <div className="hidden md:flex md:flex-row justify-center items-center gap-6 font-montserrat">
           <a href="#" className="text-lg hover:text-white">
             Login
@@ -30,7 +34,7 @@ export function Header() {
             </button>
           </a>
         </div>
-        {isMobile && <BurgerMenu />}
+        {isHomepage ? isMobile && <BurgerMenu /> : null}
       </header>
     </div>
   );
